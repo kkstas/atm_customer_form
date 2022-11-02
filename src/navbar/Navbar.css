@@ -1,0 +1,116 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent linear-gradient(144deg, #2E3092 52%, #ED028C 101%);
+    height: 143px;
+    margin: 0 20px;
+    
+
+    
+}
+
+.pink-box {
+  position: absolute;
+  width: 90px;
+  height: 8px;
+  background-color: #ED028C;
+  left: 0px;
+  top: 100px;
+}
+
+.blue-box {
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  background-color: #1CBFDF;
+  left: 0px;
+  top: 108px;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 25px;
+    width: calc(65px + 5vw);
+}
+
+.langSwitch {
+  margin-right: 15px;
+  
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.visLangSwitch {
+  top: 0;
+  margin-right: 15px;
+color: rgb(200, 200, 200);
+  padding: 2px 5px;
+  width: 20px;
+  z-index: 1;
+  height: 20px;
+  transition: 0.25s ease all;
+
+
+}
+
+.hidLangSwitch {
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 20px;
+  margin-right: 15px;
+  color: rgb(200, 200, 200);
+
+  padding: 2px 5px;
+  transition: 0.25s ease all;
+  height: 20px;
+}
+
+.active-lang {
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+      height: 112.44px;
+    }
+    .pink-box {
+      top: 70px;
+      width: 70px;
+      height: 6px;
+    }
+    
+    .blue-box {
+      top: 76px;
+      width: 50px;
+      height: 6px;
+    }
+    .logo {
+      padding-bottom: 34px;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    margin: 0;
+    height: 102px;
+    
+  }
+  .pink-box {
+    top: 60px;
+    width: 40px;
+  }
+  
+  .blue-box {
+    top: 66px;
+    width: 20px;
+  }
+}

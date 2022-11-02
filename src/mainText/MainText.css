@@ -1,0 +1,122 @@
+.container {
+    margin: 0 10vw;
+    padding: 75px 6vw;
+    display: flex;
+}
+
+.title {
+    font-size: clamp(1.7rem, 2.5vw, 1.95rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+    color: #2E3092;
+    text-align: right;
+}
+
+.paragraph {
+    color: #2E3092;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.horizontal-main {
+    margin: 0;
+    border: none;
+    background: #8787878f;
+    height: 0.0625rem;
+    width: 100%;
+}
+
+.horizontal-main-div {
+    position: relative;
+    display: flex;
+}
+
+.arr-down {
+    
+    border-left: 0.4375rem solid transparent;
+    border-right: 0.4375rem solid transparent;
+    border-top: 0.4375rem solid #878787;
+}
+.arr-down-div {
+    position: absolute;
+    background-color: #fff;
+    bottom: -4px;
+    left: calc(50% - 19px);
+    padding: 0 15px;
+    
+}
+
+
+.main-text-container {
+    padding-left: 10%;
+    margin-right: 6%;
+    width: 40%;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.atm-logo-container {
+    width: 35%;
+    padding-right: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    transform: rotateY(180deg) scale(1.9);
+}
+@media screen and (max-width: 320px) {
+    .atm-logo-container {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+
+        margin: 20px auto;
+
+    }
+    .container {
+        flex-direction: column-reverse;
+    }
+    .main-text-container {
+        width: 100%;
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .atm-logo-container {
+        padding: 0 10px 0 0;
+        width: 35vw;
+    }
+    .main-text-container {
+        padding: 0;
+        width: 90vw;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 4vw;
+        padding: 20px 8px;
+    }
+    .horizontal-main-div {
+        margin: 0 2vw;
+    }
+    .atm-logo-container {
+        padding-right: 8%;
+        width: 30%;
+        transform: rotateY(180deg) scale(1.4);
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+
+.horizontal-main-div {
+    margin: 0 18vw;
+}
+}

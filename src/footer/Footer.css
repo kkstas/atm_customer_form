@@ -1,0 +1,35 @@
+.footer-container {
+    width: 100vw;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.footer-hr {
+    background-color: blue;
+    border: none;
+    background: #8787878f;
+    height: 0.0625rem;
+    margin: 0 8vw;
+}
+
+.copyright-text {
+    font-size: 12px;
+    margin-top: 80px;
+    margin-left: 80vw;
+    padding-bottom: 25px;
+    color: #2e3092;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-hr {
+        margin: 0 2vw;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+
+    .footer-hr {
+        margin: 0 18vw;
+    }
+}
+

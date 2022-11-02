@@ -1,0 +1,92 @@
+.map-container {
+    width: 100%;
+    aspect-ratio: 1.6;
+    padding: 1.25rem;
+    margin-bottom: 20px;
+
+}
+
+.locate-me-container {
+    width: 100%;
+    aspect-ratio: 1.6;
+    /* background-color: rgba(169, 205, 198, 0.664); */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 1.25rem;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size:contain;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.locate-me-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(65%) blur(3px);
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size:contain;
+    align-items: center;
+}
+
+.pin {
+    width: 50%;
+    height: 50%;
+    filter: invert(100%);
+    z-index: 1;
+
+
+}
+
+.locate-btn {
+    margin-top: 5%;
+    width: 20%;
+    aspect-ratio: 1;
+    background: linear-gradient(rgb(0, 200, 129), rgb(9, 220, 219) );
+    display: flex;
+    justify-content: center;
+    transition: all .15s ease-out;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.249);
+    z-index: 1;
+}
+
+.locate-me-text {
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 1;
+    text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.572);
+    
+}
+
+.locate-btn:active {
+    background-color: #76ffab;
+    transform: scale(0.95) translateY(5px);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .map-container, .locate-me-container {
+        width: 90%;
+        padding: 0 0.65rem 0 0.65rem;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .map-container, .locate-me-container {
+        width: 88%;
+        padding: 0 0.45rem 0 0.45rem;
+    }
+}
